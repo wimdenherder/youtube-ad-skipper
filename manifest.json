@@ -1,0 +1,13 @@
+{
+  "name": "Adblock Zapper",
+  "version": "1.0",
+  "description": "No ads on YouTube by immediately skipping them",
+  "manifest_version": 3,
+  "permissions": ["scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
